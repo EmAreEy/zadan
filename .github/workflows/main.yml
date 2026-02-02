@@ -1,4 +1,4 @@
-name: Market Monitor Bot
+name: Bebin Zadan
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
-        run: python main.py
+        run: python python-bot.py
 
       - name: Commit and Push changes
         run: |
