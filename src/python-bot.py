@@ -108,7 +108,11 @@ if __name__ == "__main__":
                     message = "زدننننننننننننننننن"
                 send_telegram_message(token, chat, message=message)
             else:
-                send_telegram_message(token, chat, message="nazadan")
+                send_telegram_message(
+                    token,
+                    chat,
+                    message=f"دیگه قرار نیست بزنن {new_data.get('mizanan')}",
+                )
         else:
             message = "error in api"
             send_telegram_message(token, chat, message=message)
