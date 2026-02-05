@@ -101,18 +101,12 @@ if __name__ == "__main__":
             print(status)
             if not status == "nazadan":
                 if status == "yellow":
-                    message = "لوله گاز ترکید ؟"
+                    message = "بنگاهی زن قحبه بزن دیگه"
                 elif status == "red":
                     message = "زدن؟؟؟"
                 else:
                     message = "زدننننننننننننننننن"
                 send_telegram_message(token, chat, message=message)
-            else:
-                send_telegram_message(
-                    token,
-                    chat,
-                    message=f"دیگه قرار نیست بزنن {new_data.get('mizanan')}",
-                )
         else:
             message = "error in api"
             send_telegram_message(token, chat, message=message)
